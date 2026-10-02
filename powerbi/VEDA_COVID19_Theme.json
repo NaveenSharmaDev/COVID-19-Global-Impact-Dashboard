@@ -1,0 +1,42 @@
+{
+  "name": "COVID-19 Global Impact \u2014 VEDA",
+  "dataColors": [
+    "#2563EB",
+    "#06B6D4",
+    "#F59E0B",
+    "#10B981",
+    "#8B5CF6",
+    "#EF4444",
+    "#64748B"
+  ],
+  "background": "#F4F7FB",
+  "foreground": "#12213F",
+  "tableAccent": "#2563EB",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "title": [
+          {
+            "fontFace": "Aptos Display",
+            "fontSize": 14,
+            "color": {
+              "solid": {
+                "color": "#12213F"
+              }
+            }
+          }
+        ],
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "transparency": 0
+          }
+        ]
+      }
+    }
+  }
+}

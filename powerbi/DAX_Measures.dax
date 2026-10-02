@@ -1,0 +1,82 @@
+Total Cases =
+SUM(Fact_CovidCountryDaily[total_cases])
+
+
+Total Deaths =
+SUM(Fact_CovidCountryDaily[total_deaths])
+
+
+Total Recovered =
+SUM(Fact_CovidCountryDaily[total_recovered])
+
+
+Estimated Active =
+SUM(Fact_CovidCountryDaily[active_estimate])
+
+
+Daily Cases (Chart) =
+SUM(Fact_CovidCountryDaily[daily_cases_chart])
+
+
+Daily Deaths (Chart) =
+SUM(Fact_CovidCountryDaily[daily_deaths_chart])
+
+
+7D Avg Cases =
+AVERAGE(Fact_CovidCountryDaily[cases_7d_avg])
+
+
+7D Avg Deaths =
+AVERAGE(Fact_CovidCountryDaily[deaths_7d_avg])
+
+
+Crude CFR % =
+DIVIDE(
+    [Total Deaths],
+    [Total Cases],
+    0
+) * 100
+
+
+Cases - Latest Visible Date =
+VAR LastDate =
+    MAX(Dim_Date[date])
+RETURN
+    CALCULATE(
+        SUM(Fact_CovidCountryDaily[total_cases]),
+        Dim_Date[date] = LastDate
+    )
+
+
+Deaths - Latest Visible Date =
+VAR LastDate =
+    MAX(Dim_Date[date])
+RETURN
+    CALCULATE(
+        SUM(Fact_CovidCountryDaily[total_deaths]),
+        Dim_Date[date] = LastDate
+    )
+
+
+Recoveries - Latest Visible Date =
+VAR LastDate =
+    MAX(Dim_Date[date])
+RETURN
+    CALCULATE(
+        SUM(Fact_CovidCountryDaily[total_recovered]),
+        Dim_Date[date] = LastDate
+    )
+
+
+Revision Case Rows =
+CALCULATE(
+    COUNTROWS(Fact_CovidCountryDaily),
+    Fact_CovidCountryDaily[case_revision_flag] = TRUE()
+)
+
+
+Revision Death Rows =
+CALCULATE(
+    COUNTROWS(Fact_CovidCountryDaily),
+    Fact_CovidCountryDaily[death_revision_flag] = TRUE()
+)

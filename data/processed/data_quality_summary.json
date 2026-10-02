@@ -1,0 +1,11 @@
+{
+  "rows": 66086,
+  "countries_or_regions": 191,
+  "date_start": "2020-01-22",
+  "date_end": "2021-01-01",
+  "duplicate_country_date_rows": 0,
+  "negative_case_revisions": 51,
+  "negative_death_revisions": 72,
+  "vaccination_data_available": false,
+  "population_data_available": false
+}

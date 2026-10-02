@@ -1,0 +1,42 @@
+[
+  {
+    "file": "data/raw/CoronaVirus Data.csv",
+    "bytes": 8384759
+  },
+  {
+    "file": "data/raw/README.md",
+    "bytes": 752
+  },
+  {
+    "file": "data/raw/original_archives/COVID-19-master_ORIGINAL.zip",
+    "bytes": 376047670
+  },
+  {
+    "file": "data/raw/original_archives/Covid-19-Analysis-and-Prediction-main_ORIGINAL.zip",
+    "bytes": 8837108
+  },
+  {
+    "file": "data/raw/second_zip_time_series_covid19_confirmed_global.csv",
+    "bytes": 1819904
+  },
+  {
+    "file": "data/raw/second_zip_time_series_covid19_deaths_global.csv",
+    "bytes": 1255258
+  },
+  {
+    "file": "data/raw/second_zip_time_series_covid19_recovered_global.csv",
+    "bytes": 1020844
+  },
+  {
+    "file": "data/raw/time_series_covid19_confirmed_global.csv",
+    "bytes": 416277
+  },
+  {
+    "file": "data/raw/time_series_covid19_deaths_global.csv",
+    "bytes": 289775
+  },
+  {
+    "file": "data/raw/time_series_covid19_recovered_global.csv",
+    "bytes": 373146
+  }
+]
