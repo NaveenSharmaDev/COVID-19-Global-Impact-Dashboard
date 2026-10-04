@@ -1,5 +1,5 @@
 # COVID-19 Global Impact Dashboard
-**VEDA Technology Internship Project | Data Analytics**
+** Data Analytics Internship Project **
 
 An interactive historical data analytics dashboard developed using Python, Pandas, Plotly, and Streamlit. The project uses the original COVID-19 datasets supplied in two ZIP archives to explore reported cases, deaths, recoveries, and vaccination trends where a separate source is available.
 
@@ -23,6 +23,7 @@ The supplied JHU-style wide time-series files from both ZIP archives are retaine
 
 Files prefixed with `second_zip_` were obtained from `COVID-19-master.zip`. These files are maintained as a separate reference set and are not merged with the primary dataset. This avoids accidental double counting and mixed-source totals.
 
+
 ### Data Scope and Limitations
 
 The selected original source does not contain a compatible population table or vaccination time series. Therefore, the historical dataset is not used to calculate vaccination coverage, cases per million, or vaccine/death correlation.
@@ -30,6 +31,7 @@ The selected original source does not contain a compatible population table or v
 These analyses require a separately sourced, cited, and date-compatible population or vaccination dataset.
 
 The historical data ends on the date recorded in `data/processed/data_quality_summary.json`. It is not a live data source.
+
 
 ## 3. Dashboard Features
 
@@ -46,6 +48,7 @@ The historical data ends on the date recorded in `data/processed/data_quality_su
 - Country snapshot table with CSV export.
 - Data revision flags and documented data limitations.
 - Interactive Plotly 3D country comparison.
+
 
 ## 4. Technology Stack
 
